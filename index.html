@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+  <body>
+    <header>
+    <h1 id="title">BURNING MAN</h1>
+  <p id="description">(one of the most famous festival in the world)</p>
+  </header>
+  <main>
+    <fieldset>
+      <legend>Complete this form, please</legend>
+    
+    
+  <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+  <label id="name-label" for="name">Full name:
+    <input class="input-control" id="name" type="text" name="name" placeholder="enter your name" required>
+    </label>
+    
+
+
+    <label id="email-label" for="email">Email:
+    <input class="input-control" id="email" type="email" name="email" placeholder="enter your email" required>
+    </label>
+    
+
+    
+    <label id="number-label" for="number">Age:
+    <input class="input-control" id="number" type="number" name="age" min="18" max="99" placeholder="select your age" required>
+    </label>
+    
+    
+<label for="dropdown">How did you hear about the festival?</label>
+    <select id="dropdown" name="dropdown">
+      <option disabled selected>(select one)</option>
+      <option value="1">Internet</option>
+      <option value="2">TV</option>
+      <option value="3">Radio</option>
+      <option value="4">Friends</option>
+      <option value="5">City banner</option>
+    </select>
+
+<p class="p-label">Would you visit the festival again?</p>
+
+<label class="label_radio_margin_top" for="totally">
+    <input id="totally" type="radio" class="inline" name="recommendation" value="totally" required>
+  Totally </label>
+ 
+  <label class="label_radio_margin_top" for="mostly-yes">
+  <input id="mostly-yes" type="radio" class="inline" name="recommendation" value="mostly-yes">
+  Mostly yes </label>
+ 
+  <label class="label_radio_margin_top" for="indefinitely">
+  <input id="indefinitely" type="radio" class="inline" name="recommendation" value="indefinitely">
+  Indefinitely </label>
+
+  <label class="label_radio_margin_top" for="mostly-no">
+  <input id="mostly-no" type="radio" class="inline" name="recommendation" value="mostly-no">
+  Mostly no </label>
+
+  <label class="label_radio_margin_top" for="never">
+  <input id="never" type="radio" class="inline" name="recommendation" value="never">
+  Never </label>
+
+<label for="most-impressed">What impressed you the most?</label>
+    <select id="most-impressed" name="most-impressed">
+        <option disabled selected>(select one)</option>
+      <option value="Music">Music</option>
+      <option value="Food">Food</option>
+      <option value="Decorations">Decorations</option>
+      <option value="surrounding">Surrounding</option>
+      </select>
+
+
+
+<p class="p-label">What music genres do you prefer to play at the festival?</p>
+      <label class="label_checkbox_margin_top"><input type="checkbox" name="genres" value="trance"> Trance</label>
+      <label class="label_checkbox_margin_top"><input type="checkbox" name="genres" value="techno"> Techno</label>
+      <label class="label_checkbox_margin_top"><input type="checkbox" name="genres" value="progressive-house"> Progressive house</label>
+      <label class="label_checkbox_margin_top"><input type="checkbox" name="genres" value="downtempo"> Downtempo</label>
+      <label class="label_checkbox_margin_top"><input type="checkbox" name="genres" value="acid-jazz"> Acid Jazz</label>
+
+      <label for="feedback"> Leave us a message (optional):</label>
+        <textarea placeholder="Leave your message..." class="textarea-control" id="feedback" name="feedback" rows="10" col="25"></textarea>
+      
+
+      <button class="submit-button" type="submit" id="submit">
+        SUBMIT
+      </button>
+</fieldset>
+</form>
+</main>
+</body>
+</html>
